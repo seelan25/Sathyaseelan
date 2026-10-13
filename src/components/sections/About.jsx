@@ -15,14 +15,13 @@ export default function About() {
           </div>
           <div className="column right">
             <div className="text">
-              I'm Sathyaseelan and I'm a <TypingText className="typing-2" />
+              I'm Sathyaseela G and I'm a <TypingText className="typing-2" />
             </div>
             <p>
-              Hello! My Name is Sathyaseelan G, and I am a passionate Computer
-              Science and Engineering student currently pursuing my degree at
-              KSR College Of Engineering.I am dedicated to expanding my
-              knowledge and honing my skills in Web Development,and I am
-              commited to continuous growth and development.
+              I am Sathyaseela G, a Computer Science and Engineering graduate
+              from KSR College of Engineering. I build full stack web
+              applications with a focus on clean, reliable software, and I am
+              committed to growing further as a developer.
             </p>
             <a href={cvUrl} target="_blank" rel="noreferrer">
               Download CV

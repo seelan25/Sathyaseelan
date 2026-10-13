@@ -1,4 +1,4 @@
-import avatar from "../../assets/images/avatar.jpg";
+import avatar from "../../assets/images/avatar.png";
 import SocialLinks from "../common/SocialLinks";
 import TypingText from "../common/TypingText";
 
@@ -10,7 +10,7 @@ export default function Home() {
       <div className="max-width">
         <div className="home-content">
           <div className="text-1">Hello, my name is</div>
-          <div className="text-2">SATHYASEELAN</div>
+          <div className="text-2">SATHYASEELA G</div>
           <div className="text-3">
             And I'm a <TypingText />
           </div>
@@ -23,7 +23,7 @@ export default function Home() {
         </div>
         <div className="column right">
           <div className="img">
-            <img src={avatar} alt="Sathyaseelan" />
+            <img src={avatar} alt="Sathyaseela G" />
           </div>
         </div>
       </div>

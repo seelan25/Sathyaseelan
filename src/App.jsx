@@ -17,8 +17,11 @@ function usePage() {
 
   useEffect(() => {
     const onChange = () => {
-      setPage(read());
-      window.scrollTo(0, 0);
+      const next = read();
+      setPage(next);
+      if (next === "movie" || next === "travel") {
+        window.scrollTo(0, 0);
+      }
     };
     window.addEventListener("hashchange", onChange);
     return () => window.removeEventListener("hashchange", onChange);
@@ -33,6 +36,12 @@ export default function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("#home");
+
+  useEffect(() => {
+    if (page === "movie" || page === "travel") return;
+    const target = document.getElementById(page || "home");
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [page]);
 
   useEffect(() => {
     const onScroll = () => {

@@ -41,7 +41,7 @@ export default function Contact() {
                 <FaUser aria-hidden="true" />
                 <div className="info">
                   <div className="head">Name</div>
-                  <div className="sub-title">Sathyaseelan</div>
+                  <div className="sub-title">Sathyaseela G</div>
                 </div>
               </div>
               <div className="row">
