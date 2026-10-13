@@ -1,0 +1,146 @@
+.cine {
+  min-height: 100vh;
+  background: #07070b;
+  color: #f6f4ef;
+  font-family: "Poppins", sans-serif;
+}
+.cine-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.cine-bar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #f6f4ef;
+}
+.cine-bar strong {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #e8b15a;
+}
+.cine-bar span { color: #b7b3aa; }
+.cine-hero {
+  margin: 14px 16px 0;
+  padding: 22px 18px;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(232, 177, 90, 0.35), transparent 30%),
+    linear-gradient(135deg, #1a1020, #3a1020 55%, #120c14);
+}
+.cine-hero.harbor { background: linear-gradient(135deg, #101820, #3a1a14 60%, #120e0c); }
+.cine-hero.monsoon { background: linear-gradient(135deg, #0d1820, #123044 60%, #10141c); }
+.cine-hero.signal { background: linear-gradient(135deg, #141018, #2a1230 55%, #101014); }
+.cine-kicker {
+  color: #e8b15a;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.cine-hero h1 {
+  margin: 8px 0 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 0.95;
+}
+.cine-hero p { max-width: 520px; color: #e7e1d6; }
+.cine-meta {
+  display: flex;
+  gap: 16px;
+  margin-top: 22px;
+  color: #e8b15a;
+}
+.cine-meta span { display: inline-flex; align-items: center; gap: 6px; }
+.cine-wrap {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 14px;
+  padding: 14px 16px 28px;
+}
+.cine-list { display: grid; gap: 8px; }
+.cine-card {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 14px;
+  align-items: center;
+  text-align: left;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #111117;
+  color: inherit;
+  cursor: pointer;
+}
+.cine-card.active { border-color: #e8b15a; }
+.cine-card small { display: block; color: #b7b3aa; }
+.poster {
+  height: 72px;
+  border-radius: 12px;
+  background: linear-gradient(160deg, #e11d48, #2a1020);
+}
+.harbor .poster { background: linear-gradient(160deg, #c2410c, #1c1917); }
+.monsoon .poster { background: linear-gradient(160deg, #0284c7, #0f172a); }
+.signal .poster { background: linear-gradient(160deg, #a855f7, #1e1b4b); }
+.cine-book {
+  padding: 22px;
+  border-radius: 22px;
+  background: #111117;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.cine-shows, .legend { display: flex; flex-wrap: wrap; gap: 8px; }
+.cine-shows { margin: 14px 0 18px; }
+.cine-shows button, .pay {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.cine-shows button.active, .pay { background: #e8b15a; color: #1a1208; border-color: #e8b15a; }
+.pay { margin-top: 16px; font-weight: 700; }
+.pay:disabled { opacity: 0.45; cursor: not-allowed; }
+.screen {
+  text-align: center;
+  margin-bottom: 14px;
+  color: #b7b3aa;
+  border-bottom: 2px solid rgba(232, 177, 90, 0.7);
+  padding-bottom: 6px;
+}
+.seats {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 6px;
+}
+.seats button {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 0;
+  font-size: 11px;
+  background: #2a2a33;
+  color: #fff;
+  cursor: pointer;
+}
+.seats button.picked { background: #e8b15a; color: #1a1208; }
+.seats button.taken { background: #3f1d28; color: #8a7a80; cursor: not-allowed; }
+.legend { margin-top: 12px; color: #b7b3aa; font-size: 13px; }
+.legend .picked, .legend .taken { padding: 2px 8px; border-radius: 999px; }
+.legend .picked { background: #e8b15a; color: #1a1208; }
+.legend .taken { background: #3f1d28; }
+.ticket {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(232, 177, 90, 0.12);
+  color: #f6e7c8;
+}
+@media (max-width: 860px) {
+  .cine-wrap { grid-template-columns: 1fr; }
+  .cine-hero { padding: 18px 14px; }
+  .cine-bar span { display: none; }
+  .seats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
