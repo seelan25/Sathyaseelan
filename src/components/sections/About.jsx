@@ -15,10 +15,10 @@ export default function About() {
           </div>
           <div className="column right">
             <div className="text">
-              I'm Sathyaseela G and I'm a <TypingText className="typing-2" />
+              I'm Sathyaseelan G and I'm a <TypingText className="typing-2" />
             </div>
             <p>
-              I am Sathyaseela G, a Computer Science and Engineering graduate
+              I am Sathyaseelan G, a Computer Science and Engineering graduate
               from KSR College of Engineering. I build full stack web
               applications with a focus on clean, reliable software, and I am
               committed to growing further as a developer.

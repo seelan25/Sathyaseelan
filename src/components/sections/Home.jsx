@@ -10,7 +10,7 @@ export default function Home() {
       <div className="max-width">
         <div className="home-content">
           <div className="text-1">Hello, my name is</div>
-          <div className="text-2">SATHYASEELA G</div>
+          <div className="text-2">SATHYASEELAN G</div>
           <div className="text-3">
             And I'm a <TypingText />
           </div>
